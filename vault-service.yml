@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc://postgresql://localhost:5432/razorpay-vault-service-db
+    url: jdbc:postgresql://localhost:5432/razorpay-vault-service-db
 
 vault:
   master-key: NqcfbjG1zk0fBsnF/wPmlLA7aa0vh9RCHTYygy/9A2Q=
