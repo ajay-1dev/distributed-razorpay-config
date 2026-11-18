@@ -23,20 +23,20 @@ spring:
             - id: merchant-service
               uri: lb://merchant-service
               predicates:
-              - path: /v1/auth/**, /v1/merchants/**
+                - Path=/v1/auth/**, /v1/merchants/**
 
 
             - id: payment-service
               uri: lb://payment-service
               predicates:
-              - path: /v1/orders/**, /v1/payments/**
+                - Path=/v1/orders/**, /v1/payments/**
 
             - id: vault-service
               uri: lb://vault-service
               predicates:
-              - path: /v1/vault/**
+                - Path=/v1/vault/**
 
             - id: operations-service
               uri: lb://operations-service
               predicates:
-              - path: /webhook/**
+                - Path=/webhook/**
