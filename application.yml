@@ -50,6 +50,7 @@ management:
       exposure:
         include: health,info
 
+app:
   kafka:
     topics:
       payment: payments.events
